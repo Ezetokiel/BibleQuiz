@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap');
+
+*, 
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root{
+    --red: #f8565a;
+    --orange: #e89041;
+    --yellow: #ffff67;
+    --green: #69e869;
+    --blue: #82c4da;
+    --purple: #ac4bff;
+    --black: #000;
+    --grey: #bdbdbd;
+    --light-grey: #e0e0e0;
+}
+
+.lives-container{
+    background-color: var(--light-grey);
+    width: 240px;
+    padding: 0 20px;
+    position: fixed;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: calc(50% - 220px);
+    border-radius: 0 8px 8px 0;
+    gap: 5px;
+}
+
+.lives-container h3{
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.red-square{
+    color: var(--red);
+}
+
+.orange-square{
+    color: var(--orange);
+}
+
+.yellow-square{
+    color: var(--yellow);
+}
+
+.green-square{
+    color: var(--green);
+}
+
+.blue-square{
+    color: var(--blue);
+}
+
+.purple-square{
+    color: var(--purple);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-container{
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: repeat(7, 70px);
+    grid-gap: 20px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.square{
+    height: 80px;
+    width: 80px;
+    background-color: var(--grey);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.top-row{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bottom-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-column{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.button-container button{
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 500;
+    border: solid transparent 2px;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.button-container button:hover, .box-container button:active{
+    border-color: #000;
+}
