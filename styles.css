@@ -24,26 +24,6 @@
     --light-grey: #e0e0e0;
 }
 
-.lives-container{
-    background-color: var(--light-grey);
-    width: 25vw;
-    padding: 0 20px;
-    position: fixed;
-    height: 440px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: calc(50% - 220px);
-    border-radius: 0 8px 8px 0;
-    gap: 5px;
-}
-
-.lives-container h3{
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-}
-
 .red-square{
     color: var(--red);
 }
@@ -80,8 +60,8 @@
     height: fit-content;
     width: fit-content;
     display: grid;
-    grid-template-columns: repeat(8, 7vw);
-    grid-template-rows: repeat(7, 7vw);
+    grid-template-columns: repeat(8, 8vw);
+    grid-template-rows: repeat(7, 8vw);
     grid-gap: 18px;
 }
 
@@ -90,8 +70,8 @@
 }
 
 .square{
-    height: 7vw;
-    width: 7vw;
+    height: 8vw;
+    width: 8vw;
     background-color: var(--grey);
     border-radius: 8px;
     transition: all 0.3s;
