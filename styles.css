@@ -26,7 +26,7 @@
 
 .lives-container{
     background-color: var(--light-grey);
-    width: 240px;
+    width: 260px;
     padding: 0 20px;
     position: fixed;
     height: 440px;
@@ -39,7 +39,7 @@
 }
 
 .lives-container h3{
-    font-size: 28px;
+    font-size: 30px;
     display: flex;
     align-items: center;
 }
@@ -80,9 +80,9 @@
     height: fit-content;
     width: fit-content;
     display: grid;
-    grid-template-columns: repeat(8, 70px);
-    grid-template-rows: repeat(7, 70px);
-    grid-gap: 20px;
+    grid-template-columns: repeat(8, 88px);
+    grid-template-rows: repeat(7, 88px);
+    grid-gap: 10px;
 }
 
 .hidden{
@@ -90,8 +90,8 @@
 }
 
 .square{
-    height: 80px;
-    width: 80px;
+    height: 88px;
+    width: 88px;
     background-color: var(--grey);
     border-radius: 8px;
     transition: all 0.3s;
