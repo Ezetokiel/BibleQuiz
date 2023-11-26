@@ -61,14 +61,6 @@ function arraySort(x, y){
 }
 
 function refresh(){
-    redLives.innerHTML = `Red <i class='bx bxs-square red-square'></i>: 5`;
-    orangeLives.innerHTML = `Orange <i class='bx bxs-square orange-square'></i>: 5`;
-    yellowLives.innerHTML = `Yellow <i class='bx bxs-square yellow-square'></i>: 5`;
-    greenLives.innerHTML = `Green <i class='bx bxs-square green-square'></i>: 5`;
-    blueLives.innerHTML = `Blue <i class='bx bxs-square blue-square'></i>: 5`;
-    purpleLives.innerHTML = `Purple <i class='bx bxs-square purple-square'></i>: 5`;
-    emptyRemaining.innerHTML = `Empty <i class='bx bxs-square'></i>: 6`;
-
     squares.forEach((item) => {
         item.style.backgroundColor = "var(--grey)";
         item.style.transform = "scale(1)";
@@ -152,50 +144,36 @@ function refresh(){
             item.addEventListener("click", () => {
                 item.style.backgroundColor = "var(--red)";
                 item.style.transform = "scale(0.8)";
-                red.splice(red.indexOf((Array.prototype.indexOf.call(boxContainer.children, item), 1)));
-                redLives.innerHTML = `Red <i class='bx bxs-square red-square'></i>: ${red.length}`
             })
         } else if(orange.includes(Array.prototype.indexOf.call(boxContainer.children, item))){
             item.addEventListener("click", () => {
                 item.style.backgroundColor = "var(--orange)";
                 item.style.transform = "scale(0.8)";
-                orange.splice(orange.indexOf((Array.prototype.indexOf.call(boxContainer.children, item), 1)));
-                orangeLives.innerHTML = `Orange <i class='bx bxs-square orange-square'></i>: ${orange.length}`
             })
         } else if(yellow.includes(Array.prototype.indexOf.call(boxContainer.children, item))){
             item.addEventListener("click", () => {
                 item.style.backgroundColor = "var(--yellow)";
                 item.style.transform = "scale(0.8)";
-                yellow.splice(yellow.indexOf((Array.prototype.indexOf.call(boxContainer.children, item), 1)));
-                yellowLives.innerHTML = `Yellow <i class='bx bxs-square yellow-square'></i>: ${yellow.length}`
             })
         } else if(green.includes(Array.prototype.indexOf.call(boxContainer.children, item))){
             item.addEventListener("click", () => {
                 item.style.backgroundColor = "var(--green)";
                 item.style.transform = "scale(0.8)";
-                green.splice(orange.indexOf((Array.prototype.indexOf.call(boxContainer.children, item), 1)));
-                greenLives.innerHTML = `Green <i class='bx bxs-square green-square'></i>: ${green.length}`
             })
         } else if(blue.includes(Array.prototype.indexOf.call(boxContainer.children, item))){
             item.addEventListener("click", () => {
                 item.style.backgroundColor = "var(--blue)";
                 item.style.transform = "scale(0.8)";
-                blue.splice(blue.indexOf((Array.prototype.indexOf.call(boxContainer.children, item), 1)));
-                blueLives.innerHTML = `Blue <i class='bx bxs-square blue-square'></i>: ${blue.length}`
             })
         } else if(purple.includes(Array.prototype.indexOf.call(boxContainer.children, item))){
             item.addEventListener("click", () => {
                 item.style.backgroundColor = "var(--purple)";
                 item.style.transform = "scale(0.8)";
-                purple.splice(purple.indexOf((Array.prototype.indexOf.call(boxContainer.children, item), 1)));
-                purpleLives.innerHTML = `Purple <i class='bx bxs-square purple-square'></i>: ${purple.length}`
             })
         } else {
             item.addEventListener("click", () => {
                 item.style.backgroundColor = "var(--black)";
                 item.style.transform = "scale(0.8)";
-                empty.splice(empty.indexOf((Array.prototype.indexOf.call(boxContainer.children, item), 1)));
-                emptyRemaining.innerHTML = `Empty <i class='bx bxs-square'></i>: ${empty.length}`
             })
         }
     })
