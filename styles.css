@@ -26,7 +26,7 @@
 
 .lives-container{
     background-color: var(--light-grey);
-    width: 240px;
+    width: 230px;
     padding: 0 20px;
     position: fixed;
     height: 440px;
@@ -82,7 +82,7 @@
     display: grid;
     grid-template-columns: repeat(8, 70px);
     grid-template-rows: repeat(7, 70px);
-    grid-gap: 20px;
+    grid-gap: 18px;
 }
 
 .hidden{
@@ -90,8 +90,8 @@
 }
 
 .square{
-    height: 80px;
-    width: 80px;
+    height: 76px;
+    width: 76px;
     background-color: var(--grey);
     border-radius: 8px;
     transition: all 0.3s;
